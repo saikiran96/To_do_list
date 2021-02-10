@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title></title>
     <link rel="stylesheet" href="/master.css">
+    <link rel="stylesheet" href="/check_box.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&family=Yusei+Magic&display=swap" rel="stylesheet">
@@ -17,13 +18,20 @@
   <p class="date"><%=day%></p>
 </div>
 
-    <ul class="list-group">
+    <ul class="list-group1">
 
 <%  items.forEach(function(item){  %>
   <form  action="/checkbox" method="post">
-    <li class="list-group-item">
-        <input type="checkbox" class ="strike" name = "check_box" value = <%=item._id%> onChange= "this.form.submit()">
-        <p class = "para"><%=item.name%> </p>
+
+
+    <li class="list-group-item1"  >
+          <label class="container1">  <%=item.name%>
+          <input type="checkbox" class ="strike" name = "check_box" value = <%=item._id%> onChange= "this.form.submit()">
+          <span class="checkmark"></span>
+
+        </label>
+
+        <!-- <p class = "para"><%=item.name%> </p> -->
       </form>
 
     </li>
@@ -33,7 +41,7 @@
     <form class="" action="/" method="post">
       <div class="form-group">
     <input type="text" class="form-control" name="new_do_value"  id="exampleFormControlInput1" placeholder="Add New task">
-<input type="submit" class="btn btn btn-outline-secondary" id = "add_button" name="" value="ADD">
+<input type="submit" class="btn btn-outline-success" id = "add_button" name="" value="ADD">
   </div>
 
     </form>

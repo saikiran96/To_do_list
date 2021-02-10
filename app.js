@@ -87,6 +87,8 @@ app.post("/",function(req,res){
   let new_do_list = req.body.new_do_value;
 
 
+  new_do_list = new_do_list[0].toUpperCase()+new_do_list.slice(1).toLowerCase();
+
    const new_item = new Task({
      name : new_do_list
    });
