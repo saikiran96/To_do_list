@@ -1,0 +1,94 @@
+body,html{
+
+
+
+}
+
+
+
+h1{
+  /* margin: 8% 40%; */
+  width: auto;
+  text-align: center;
+}
+
+
+#exampleFormControlInput1{
+  width: 80%;
+  float: left;
+  height: auto;
+}
+
+.btn-outline-secondary{
+  width: 20%;
+  font-weight: bold;
+
+}
+#add_button{
+  height: 100%;
+
+}
+
+.list-group{
+  border-radius: 0px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+
+.list-group-item{
+  height: 50px;
+}
+
+.center_block{
+  margin: 5% 40%;
+  width: 20%;
+  height: auto;
+}
+
+div h3{
+color:#ffffff;
+text-align: center;
+padding: 10px 0px;
+background-color: gray;
+border-top-left-radius:  10px;
+border-top-right-radius: 10px;
+margin-bottom: 0px;
+padding-bottom: 3px;
+margin-top: 0px;
+font-family: 'Yusei Magic', sans-serif;
+font-weight: bold;
+}
+
+.strike{
+  float: left;
+  margin-top: 5%;
+  border-radius: 50%;
+}
+
+.strike:checked + .para{
+  text-decoration: line-through;
+}
+
+.strike:checked + .strike{
+  background-color: green;
+}
+
+
+.para{
+  margin-left: 10%;
+  margin-top: 3%;
+}
+
+.form-control{
+  height: 50px;
+}
+
+.date{
+  font-size: 15px;
+  background-color: gray;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 0px;
+  font-family: 'Yusei Magic', sans-serif;
+  padding-bottom: 10px;
+}
